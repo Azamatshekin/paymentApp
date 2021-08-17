@@ -32,6 +32,7 @@ insert a user with username ```admin``` and password ```1```:
 ``` insert into t_user(id, c_username, c_password) values(default, 'admin', '6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b'); ```
 
 ## Endpoints
+### Authorization
 #### http://localhost:8080/login
 Post Data:
 
@@ -47,7 +48,7 @@ Response Data:
 "token": "b3d8f6a4-9dcd-4393-a570-a9aac0c0d8d4"
 }
 ```
-
+### LOGOUT
 #### http://localhost:8080/logout
 Post Data:
 
@@ -58,6 +59,7 @@ Post Data:
 Response Data:
 (Empty)
 
+### Make Payment
 #### http://localhost:8080/payment
 Post Data:
 
